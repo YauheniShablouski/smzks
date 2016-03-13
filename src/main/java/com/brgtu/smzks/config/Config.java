@@ -41,7 +41,7 @@ public class Config {
     @Bean(name = "dataSource")
     public DataSource dataSource() {
         DriverManagerDataSource toReturn = new DriverManagerDataSource("jdbc:mysql://localhost:3306/smzks",
-                "root", "5254328");
+                "root", "12345678");
         toReturn.setDriverClassName("com.mysql.jdbc.Driver");
         return toReturn;
     }
