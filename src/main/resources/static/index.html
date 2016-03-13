@@ -1,0 +1,31 @@
+<!doctype html>
+<html>
+<head>
+    <title>Rega</title>
+    <link href="css/angular-material.min.css" rel="stylesheet">
+</head>
+
+<body ng-app="MainApp" ng-cloak class="ng-cloak" layout="column" id="popupContainer">
+    <div ng-controller="navigation as nav">
+        <md-content>
+            <section layout="row" layout-sm="column" layout-align="center center" layout-wrap>
+                <md-button class="md-raised" ng-href="#/">Home</md-button>
+                <md-button ng-show="!authenticated" class="md-raised" ng-href="#/login">Login</md-button>
+                <md-button ng-show="authenticated" class="md-raised" ng-click="logout()">Logout</md-button>
+                <md-button class="md-raised" ng-href="#/registration">Registration</md-button>
+            </section>
+        </md-content>
+    </div>
+
+    <div ng-view></div>
+
+    <script src="js/libs/angular.min.js" type="text/javascript"></script>
+    <script src="js/libs/angular-animate.min.js" type="text/javascript"></script>
+    <script src="js/libs/angular-material.min.js" type="text/javascript"></script>
+    <script src="js/libs/angular-aria.min.js"></script>
+    <script src="js/libs/angular-messages.min.js"></script>
+    <script src="js/libs/angular-route.min.js" type="text/javascript"></script>
+
+    <script src="js/app/main.js"></script>
+</body>
+</html>
