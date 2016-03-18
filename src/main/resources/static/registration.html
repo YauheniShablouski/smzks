@@ -3,20 +3,20 @@
         <section layout="column" layout-sm="column" layout-align="center center" layout-wrap>
             <md-input-container class="md-block" flex-gt-sm>
                 <label>Username</label>
-                <input ng-model="controller.user.username">
+                <input ng-model="vm.user.username">
             </md-input-container>
 
             <md-input-container class="md-block" flex-gt-sm>
                 <label>Password</label>
-                <input ng-model="controller.user.password">
+                <input ng-model="vm.user.password">
             </md-input-container>
 
             <md-input-container class="md-block" flex-gt-sm>
                 <label>Name</label>
-                <input ng-model="controller.user.name">
+                <input ng-model="vm.user.name">
             </md-input-container>
 
-            <md-button class="md-raised md-primary" ng-click="controller.signUp();">Registration</md-button>
+            <md-button class="md-raised md-primary" ng-click="vm.signUp();">Registration</md-button>
         </section>
     </md-content>
 </div>

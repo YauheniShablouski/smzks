@@ -38,6 +38,7 @@ public class UserServiceImpl implements UserService {
         role.setRole("ROLE_ADMIN");
         role.setUser(user);
         role = roleDao.save(role);
+
         roles.add(role);
         user.setRoles(roles);
 

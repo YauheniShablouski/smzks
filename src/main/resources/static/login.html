@@ -3,15 +3,15 @@
         <section layout="column" layout-sm="column" layout-align="center center" layout-wrap >
             <md-input-container class="md-block" flex-gt-sm>
                 <label>Username</label>
-                <input ng-model="controller.credentials.username">
+                <input ng-model="vm.credentials.username">
             </md-input-container>
 
             <md-input-container class="md-block" flex-gt-sm>
                 <label>Password</label>
-                <input ng-model="controller.credentials.password">
+                <input ng-model="vm.credentials.password">
             </md-input-container>
 
-            <md-button class="md-raised md-primary" ng-click="controller.login();">Login</md-button>
+            <md-button class="md-raised md-primary" ng-click="vm.login();">Login</md-button>
         </section>
     </md-content>
 </div>
